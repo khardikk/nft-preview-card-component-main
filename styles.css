@@ -21,6 +21,8 @@ body {
     color: hsl(215, 51%, 70%);
     background-color: hsl(216, 50%, 16%);
     margin-bottom: 50px;
+    box-shadow: 1px 1px 8px hsl(216, 50%, 16%);
+
 }
 
 h3 {

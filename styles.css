@@ -28,10 +28,63 @@ h3 {
   color:hsl(0, 0%, 100%);
   margin-bottom: 0px;
 }
+h3:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 
 p {
   font-weight: 300;
   font-size: 15px;  
+}
+
+.p-footer{
+    color:white;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .hover-icon {
+    visibility: hidden; /* Initially hide the icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-wrapper:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .img-wrapper:hover .hover-icon {
+    cursor: pointer;
+    z-index: 2;
+    visibility: visible; 
+  } 
+
+  .img-wrapper img {
+    display: block;
+    width: 40px;
+  }
+
+.p-footer:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 .icon-wrapper{
     display: flex;

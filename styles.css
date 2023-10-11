@@ -46,6 +46,7 @@ p {
     position: relative;
     display: inline-block;
   }
+
   .hover-icon {
     visibility: hidden; /* Initially hide the icon */
     position: absolute;
@@ -71,6 +72,9 @@ p {
     pointer-events: none;
   }
   
+  .img-wrapper:hover {
+    cursor: pointer;
+  }
   .img-wrapper:hover .hover-icon {
     cursor: pointer;
     z-index: 2;
